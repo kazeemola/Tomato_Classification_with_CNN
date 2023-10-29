@@ -54,9 +54,10 @@ async def predict(
 
     predicted_class = CLASS_NAMES[np.argmax(predictions[0])]
     confidence = np.max(predictions[0])
+    confidence_pct = f" {round(float(confidence), 2) * 100} percent"
     return {
         'class': predicted_class,
-        'confidence': float(confidence)
+        'confidence': confidence_pct
     }
 
 

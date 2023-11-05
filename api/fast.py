@@ -16,7 +16,7 @@ origins = [
 ]
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -37,7 +37,7 @@ CLASS_NAMES = ['Tomato_Bacterial_spot',
 
 @app.get("/ping")
 async def ping():
-    return "Hello, I am alive"
+    return "I can assure you that the server is alive"
 
 def read_file_as_image(data) -> np.ndarray:
     image = np.array(Image.open(BytesIO(data)))

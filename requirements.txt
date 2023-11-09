@@ -1,4 +1,5 @@
-pip install fastapi "uvicorn[standard]"
+pip install fastapi
+pip install uvicorn
 pip install tensorflow
 pip install fastapi
 pip install numpy

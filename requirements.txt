@@ -1,8 +1,8 @@
-pip install fastapi
-pip install uvicorn
-pip install tensorflow
-pip install fastapi
-pip install numpy
-pip install io
-pip install PIL
-pip freeze > requirements.txt
+fastapi
+uvicorn[standard]
+tensorflow
+fastapi
+numpy
+io
+PIL
+freeze > requirements.txt

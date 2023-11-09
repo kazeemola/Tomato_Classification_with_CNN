@@ -5,4 +5,4 @@ fastapi
 numpy
 #io
 #PIL
-freeze > requirements.txt
+#freeze > requirements.txt

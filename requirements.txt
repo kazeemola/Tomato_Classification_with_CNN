@@ -4,5 +4,5 @@ tensorflow
 fastapi
 numpy
 #io
-PIL
+#PIL
 freeze > requirements.txt
